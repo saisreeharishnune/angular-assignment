@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="mt50 ml50">
+<button class="btn btn-primary" (click)="viewDashboard()"> View Student Dashboard</button>
+<button class="btn btn-primary" (click)="viewAdmissionForm()"> View AdmissionForm</button>
+</div>
+<div style="text-align:center" *ngIf="showDashboard">
+  <app-student-dash-board></app-student-dash-board>
+</div>
+ 
+<div *ngIf="showForm">
+<app-admission-form></app-admission-form>
+</div>
